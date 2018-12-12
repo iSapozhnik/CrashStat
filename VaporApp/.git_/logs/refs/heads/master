@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 486f51b611ad0dc51377215c0439beba47aceab2 Ivan Sapozhnik <sapozhnik.ivan@gmail.com> 1541791178 +0100	commit (initial): 'created Vapor from template https://github.com/vapor/api-template'
+486f51b611ad0dc51377215c0439beba47aceab2 96ce0e7f8260dc87dffd9f23104b3303bf4449c8 Ivan Sapozhnik <sapozhnik.ivan@gmail.com> 1544127734 +0100	commit: Initial commit
+96ce0e7f8260dc87dffd9f23104b3303bf4449c8 623c41343c10cd986e59cc5a88b1ca4406a2c6b6 Ivan Sapozhnik <sapozhnik.ivan@gmail.com> 1544367697 +0100	commit: Setting up PostgreSQL
+623c41343c10cd986e59cc5a88b1ca4406a2c6b6 3612b7b038b36f434a8e4def3e55e1612e8943c5 Ivan Sapozhnik <sapozhnik.ivan@gmail.com> 1544368622 +0100	commit: 'adding procfile'
+3612b7b038b36f434a8e4def3e55e1612e8943c5 1845e0aad002cead1dfb8295ccaa99315d6ce12c Ivan Sapozhnik <sapozhnik.ivan@gmail.com> 1544369708 +0100	commit: fixing compile error
+1845e0aad002cead1dfb8295ccaa99315d6ce12c b6304d8421eb3f063cfea3d8e0fefb8450b98ffc Ivan Sapozhnik <sapozhnik.ivan@gmail.com> 1544370630 +0100	commit: procfile
+b6304d8421eb3f063cfea3d8e0fefb8450b98ffc 1f42502a6b0adf903eb4836a1a59ede65bb02966 Ivan Sapozhnik <sapozhnik.ivan@gmail.com> 1544387489 +0100	pull origin master: Fast-forward
+1f42502a6b0adf903eb4836a1a59ede65bb02966 6fc4adad26724171d2aa20300f662de445430039 Ivan Sapozhnik <sapozhnik.ivan@gmail.com> 1544391599 +0100	commit: working on quering and saving data
+6fc4adad26724171d2aa20300f662de445430039 7d65367a15638078a4b368f2fa8dc9f8c83f20ab Ivan Sapozhnik <sapozhnik.ivan@gmail.com> 1544477733 +0100	commit: models
+7d65367a15638078a4b368f2fa8dc9f8c83f20ab a55451386b002302fa0bd43a202dacbf92cda2d6 Ivan Sapozhnik <sapozhnik.ivan@gmail.com> 1544480217 +0100	commit: fixing logic
+a55451386b002302fa0bd43a202dacbf92cda2d6 4629d4a920d13c1d6c985b84df8d572ea9f29d98 Ivan Sapozhnik <sapozhnik.ivan@gmail.com> 1544553058 +0100	commit: making crashes field optional
+4629d4a920d13c1d6c985b84df8d572ea9f29d98 8d7b38fc3451555a6ab397d7e73b6928a4bc216f Ivan Sapozhnik <sapozhnik.ivan@gmail.com> 1544565257 +0100	commit: fixing compiler error
