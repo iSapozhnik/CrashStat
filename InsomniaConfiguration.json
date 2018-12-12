@@ -1,0 +1,260 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-11-10T00:00:57.226Z",
+	"__export_source": "insomnia.desktop.app:v6.2.0",
+	"resources": [
+		{
+			"_id": "wrk_292a1e633fa348edbc68cfe256aeaaf1",
+			"created": 1541798873619,
+			"description": "",
+			"modified": 1541798897356,
+			"name": "AppCrashStat",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_344ec0837bf04ad49abd2b6ebd86e661",
+			"color": null,
+			"created": 1541798873666,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1541798873666,
+			"modified": 1541798909250,
+			"name": "New Environment",
+			"parentId": "wrk_292a1e633fa348edbc68cfe256aeaaf1",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_b65712616e454046a8a1a3abc2ab263c",
+			"cookies": [],
+			"created": 1541798873669,
+			"modified": 1541798873669,
+			"name": "Default Jar",
+			"parentId": "wrk_292a1e633fa348edbc68cfe256aeaaf1",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_8c493eee398a435089167e47625ee283",
+			"created": 1541806456341,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1541806456341,
+			"modified": 1541806456341,
+			"name": "iOS",
+			"parentId": "wrk_292a1e633fa348edbc68cfe256aeaaf1",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_5211d745331a4f658fa8e9be6a37d2ab",
+			"created": 1541806978343,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1541806456291,
+			"modified": 1541806988660,
+			"name": "Android",
+			"parentId": "wrk_292a1e633fa348edbc68cfe256aeaaf1",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_e1085cee9cc143b2b21a28321f3d80fd",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1541803953674,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_256f89e3be154168a35da1f41d15d50b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1541806456391,
+			"method": "GET",
+			"modified": 1541807158315,
+			"name": "AppInfo",
+			"parameters": [],
+			"parentId": "wrk_292a1e633fa348edbc68cfe256aeaaf1",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}",
+			"_type": "request"
+		},
+		{
+			"_id": "env_31dd3e1b9b44461da6e0f3733277e571",
+			"color": "#ff2600",
+			"created": 1541798935591,
+			"data": {
+				"base_url": "http://46e5aa3b.ngrok.io"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1,
+			"modified": 1541799935744,
+			"name": "Prod",
+			"parentId": "env_344ec0837bf04ad49abd2b6ebd86e661",
+			"_type": "environment"
+		},
+		{
+			"_id": "env_ca0cf2ddde9e4477ae3b74ff23094fb1",
+			"color": "#ff9300",
+			"created": 1541798947096,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 2,
+			"modified": 1541799878270,
+			"name": "Stage",
+			"parentId": "env_344ec0837bf04ad49abd2b6ebd86e661",
+			"_type": "environment"
+		},
+		{
+			"_id": "env_34cae1e52bc741268b59db6cf106285b",
+			"color": "#009051",
+			"created": 1541799817333,
+			"data": {
+				"base_url": "localhost:8080"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1541799817333,
+			"modified": 1541799929772,
+			"name": "Development",
+			"parentId": "env_344ec0837bf04ad49abd2b6ebd86e661",
+			"_type": "environment"
+		},
+		{
+			"_id": "req_d30e1bebbac241a0bd8fdc5afb32319d",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"event\": \"issue_impact_change\",\n    \"payload_type\": \"issue\",\n    \"payload\": {\n        \"display_id\": 123 ,\n        \"title\": \"Issue Title\" ,\n        \"method\": \"methodName of issue\",\n        \"impact_level\": 2,\n        \"crashes_count\": 54,\n        \"impacted_devices_count\": 16,\n        \"url\": \"http://crashlytics.com/full/url/to/issue\"\n    }\n}"
+			},
+			"created": 1541798980440,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_256f89e3be154168a35da1f41d15d50b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1541798980440,
+			"method": "POST",
+			"modified": 1541806894465,
+			"name": "AppInfo_ios_prod",
+			"parameters": [],
+			"parentId": "fld_8c493eee398a435089167e47625ee283",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/crash/ios/prod",
+			"_type": "request"
+		},
+		{
+			"_id": "req_3371e20c21c3461e89d5633941337f41",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"appID\": \"hellowordl\",\n\t\"platform\": \"iOS\",\n\t\"version\": \"4.16\"\n}"
+			},
+			"created": 1541806450214,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_256f89e3be154168a35da1f41d15d50b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1541798980390,
+			"method": "POST",
+			"modified": 1541806488750,
+			"name": "AppInfo_ios_dev",
+			"parameters": [],
+			"parentId": "fld_8c493eee398a435089167e47625ee283",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/crash/ios/dev",
+			"_type": "request"
+		},
+		{
+			"_id": "req_9aa97cb772b14c989f1be42660439768",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"event\": \"issue_impact_change\",\n    \"payload_type\": \"issue\",\n    \"payload\": {\n        \"display_id\": 123 ,\n        \"title\": \"Issue Title\" ,\n        \"method\": \"methodName of issue\",\n        \"impact_level\": 2,\n        \"crashes_count\": 54,\n        \"impacted_devices_count\": 16,\n        \"url\": \"http://crashlytics.com/full/url/to/issue\"\n    }\n}"
+			},
+			"created": 1541806978363,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_256f89e3be154168a35da1f41d15d50b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1541798980440,
+			"method": "POST",
+			"modified": 1541807007313,
+			"name": "AppInfo_android_prod",
+			"parameters": [],
+			"parentId": "fld_5211d745331a4f658fa8e9be6a37d2ab",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/crash/ios/prod",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d251e983c9304daa8ae26de194e7bf0c",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"appID\": \"hellowordl\",\n\t\"platform\": \"iOS\",\n\t\"version\": \"4.16\"\n}"
+			},
+			"created": 1541806978373,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_256f89e3be154168a35da1f41d15d50b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1541798980390,
+			"method": "POST",
+			"modified": 1541807014939,
+			"name": "AppInfo_android_dev",
+			"parameters": [],
+			"parentId": "fld_5211d745331a4f658fa8e9be6a37d2ab",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/crash/ios/dev",
+			"_type": "request"
+		}
+	]
+}
